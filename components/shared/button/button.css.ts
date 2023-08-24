@@ -1,0 +1,42 @@
+import { colorTheme } from "@/app/theme/theme.css";
+import { vars } from "@/app/theme/vars.css";
+import { style } from "@vanilla-extract/css";
+
+export const button = style({
+  WebkitFontSmoothing: "antialiased",
+  WebkitTapHighlightColor: "transparent",
+  alignItems: "center",
+  background: colorTheme.primary,
+  borderRadius: "5px",
+  boxSizing: "border-box",
+  color: colorTheme.on.primary,
+  cursor: "pointer",
+  display: "flex",
+  fontFamily: vars.font.ui.fontFamily,
+  fontStyle: vars.font.ui.fontStyle,
+  fontWeight: vars.font.ui.fontWeight,
+  fontSize: vars.font.ui.fontSize.desktop.medium,
+  height: "40px",
+  justifyContent: "center",
+  lineHeight: "1.25em",
+  margin: "0",
+  maxWidth: "200px",
+  minWidth: "200px",
+  outline: "none",
+  padding: "0 12px",
+  position: "relative",
+  textDecoration: "none",
+  textSizeAdjust: "100%",
+  transitionDuration: ".15s",
+  transitionProperty: "border-color, background, color, box-shadow",
+  transitionTimingFunction: "ease",
+  userSelect: "none",
+  verticalAlign: "baseline",
+  ":hover": {
+    boxShadow: "none",
+    background: "transparent",
+    border: "1px solid",
+    color: colorTheme.on.surface.base,
+    borderColor: colorTheme.on.surface.base,
+  },
+});
