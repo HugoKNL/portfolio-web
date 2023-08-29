@@ -3,13 +3,8 @@
 // For viewing the color palette visualized, see https://www.figma.com/file/hLEpH7C2jvov6x90VjOqMF/Material-Theme-Builder-playground-(Copy)?type=design&node-id=1%3A732&mode=design&t=E5yAqfOh84aw1wbS-1
 // When clicking on the figma logo left top, you can select the Material Theme Builder extension to change the theme.
 
-import {
-  createGlobalTheme,
-  createTheme,
-  createThemeContract,
-} from "@vanilla-extract/css";
-
 import { pxToRem } from "@/utils/styleUtils";
+import { createGlobalTheme, createThemeContract } from "@vanilla-extract/css";
 
 export const vars = createThemeContract({
   color: {

@@ -1,6 +1,6 @@
+import { style } from "@vanilla-extract/css";
 import { colorTheme } from "@/app/theme/theme.css";
 import { vars } from "@/app/theme/vars.css";
-import { style } from "@vanilla-extract/css";
 
 export const button = style({
   WebkitFontSmoothing: "antialiased",

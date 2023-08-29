@@ -9,7 +9,7 @@ import React, {
 import { useIsSSR } from "react-aria";
 
 // Define types for the context
-type ColorPreference = "light" | "dark";
+export type ColorPreference = "light" | "dark";
 
 interface ColorPreferenceContextType {
   colorPreference: ColorPreference;

@@ -1,15 +1,12 @@
-import Header from "@/components/layout/header/header";
-import * as styles from "./page.css";
-
-import { colorTheme } from "./theme/theme.css";
-import { ColorSwitchButton } from "@/components/shared/button/color-switch-button";
+import { page } from "./page.css";
+import { ColorThemeSwitch } from "@/components/index/color-theme-switch";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className={styles.page}>
-        <ColorSwitchButton>Button</ColorSwitchButton>
+      <main className={page}>
+        <ColorThemeSwitch />
+        {/* <ColorSwitchButton>Button</ColorSwitchButton> */}
       </main>
     </>
   );

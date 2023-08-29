@@ -1,6 +1,6 @@
 import { globalStyle } from "@vanilla-extract/css";
-import { vars } from "./vars.css";
 import { colorTheme } from "./theme.css";
+import { vars } from "./vars.css";
 
 // Reset
 const parentElements = ["canvas", "iframe", "img", "svg", "video"];

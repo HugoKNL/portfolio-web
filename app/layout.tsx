@@ -1,8 +1,8 @@
-"use client";
+import { Metadata } from "next";
 import { Roboto_Flex, Montserrat, Hepta_Slab } from "next/font/google";
-import "./theme/globals.css";
 import { ColorPreferenceProvider } from "@/components/context/color-preference";
 import { ThemedBody } from "@/components/layout/body/body";
+import "./theme/globals.css";
 
 const robotoFlex = Roboto_Flex({
   subsets: ["latin"],
@@ -36,3 +36,7 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  colorScheme: "dark light",
+};

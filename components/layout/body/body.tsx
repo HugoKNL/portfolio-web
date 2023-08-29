@@ -1,10 +1,11 @@
 "use client";
-import { colorThemeDark, colorThemeLight } from "@/app/theme/theme.css";
 import { useColorPreference } from "@/components/context/color-preference";
+import { colorThemeDark, colorThemeLight } from "@/app/theme/theme.css";
+import { useDynamicMetaTheme } from "./dynamic-meta-theme";
 
 export const ThemedBody = ({ children }: { children: React.ReactNode }) => {
   const { colorPreference } = useColorPreference();
-
+  useDynamicMetaTheme({ colorPreference });
   return (
     <body
       className={colorPreference === "light" ? colorThemeLight : colorThemeDark}

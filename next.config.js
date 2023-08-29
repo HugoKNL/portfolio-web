@@ -4,6 +4,7 @@ const withVanillaExtract = createVanillaExtractPlugin({
 });
 
 const nextConfig = {
+  output: "export",
   experimental: {
     appDir: true,
   },
