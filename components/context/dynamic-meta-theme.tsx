@@ -1,8 +1,5 @@
 "use client";
-import {
-  ColorPreference,
-  useColorPreference,
-} from "../../context/color-preference";
+import { ColorPreference } from "./color-preference";
 import { useEffect } from "react";
 
 export const useDynamicMetaTheme = ({

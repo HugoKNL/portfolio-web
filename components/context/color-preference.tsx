@@ -7,6 +7,7 @@ import React, {
   useEffect,
 } from "react";
 import { useIsSSR } from "react-aria";
+import { useDynamicMetaTheme } from "./dynamic-meta-theme";
 
 // Define types for the context
 export type ColorPreference = "light" | "dark";
@@ -40,6 +41,8 @@ export const ColorPreferenceProvider: React.FC<
   ColorPreferenceProviderProps
 > = ({ children }) => {
   const [colorMode, setColorMode] = useState<ColorPreference>("dark");
+
+  useDynamicMetaTheme({ colorPreference: colorMode });
 
   useEffect(() => {
     const setColorPreference = (
